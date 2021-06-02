@@ -8,13 +8,13 @@ import android.widget.Button;
 import android.content.Intent;
 
 public class MainActivity extends AppCompatActivity {
-private Button mapa;
+private Button mapa,info;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button info = findViewById(R.id.ScanQR);
+        info = findViewById(R.id.ScanQR);
         mapa= findViewById(R.id.mapa);
         info.setOnClickListener(new View.OnClickListener() {
             @Override
