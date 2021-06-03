@@ -10,7 +10,7 @@
         android:id="@+id/mapa"
         android:layout_width="110dp"
         android:layout_height="110dp"
-        android:background="@drawable/btnRuta"
+        android:background="@drawable/btn_empezar_ruta"
         android:onClick="EmpezarRuta"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,20 +23,32 @@
         android:id="@+id/ScanQR"
         android:layout_width="110dp"
         android:layout_height="110dp"
-        android:background="@drawable/btnCodigoQR"
+        android:background="@drawable/btn_escanear_codigo"
         android:onClick="EscanearCodigo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.38" />
+        app:layout_constraintVertical_bias="0.42" />
+
+    <TextView
+        android:id="@+id/txtCodigoQR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escanear codigo QR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.518" />
 
     <ImageView
         android:id="@+id/compartir"
         android:layout_width="110dp"
         android:layout_height="110dp"
-        android:background="@drawable/btnCompartir"
+        android:background="@drawable/btn_compartir_ubicacion"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -55,18 +67,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.266" />
-
-    <TextView
-        android:id="@+id/txtCodigoQR"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Escanear codigo QR"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.485" />
 
     <TextView
         android:id="@+id/txtCompartir"
