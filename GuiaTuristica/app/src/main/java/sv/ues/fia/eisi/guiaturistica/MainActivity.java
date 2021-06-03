@@ -8,29 +8,21 @@ import android.widget.Button;
 import android.content.Intent;
 
 public class MainActivity extends AppCompatActivity {
-private Button mapa,info;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
 
-        info = findViewById(R.id.ScanQR);
-        mapa= findViewById(R.id.mapa);
-        info.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent (v.getContext(), CodigoQR.class);
-                startActivityForResult(intent, 0);
-            }
-        });
+    public void EmpezarRuta (View view){
+        Intent ruta = new Intent(this, MapsActivity.class);
+        startActivity(ruta);
+    }
 
-        mapa.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent (v.getContext(), MapsActivity.class);
-                startActivity(intent);
-            }
-        });
+    public void EscanearCodigo (View view){
+        Intent codigo = new Intent(this, CodigoQR.class);
+        startActivity(codigo);
     }
 
 }
