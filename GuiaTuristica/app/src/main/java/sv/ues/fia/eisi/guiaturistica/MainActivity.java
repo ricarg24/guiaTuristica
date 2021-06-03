@@ -25,4 +25,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(codigo);
     }
 
+    public void TomarFoto (View view){
+        Intent camara = new Intent(this, camara.class);
+        startActivity(camara);
+    }
 }

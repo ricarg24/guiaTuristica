@@ -78,7 +78,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng cuscatlan = new LatLng(13.698773741880787, -89.20674993068288);
         LatLng morazan = new LatLng(13.699344405726658, -89.19044997100934);
         LatLng barrios = new LatLng(13.697775658179069, -89.19121294058081);
-        LatLng hula = new LatLng(13.698643415668437, -89.19311654879198);       
+        LatLng hula = new LatLng(13.698643415668437, -89.19311654879198);
         LatLng bonanza = new LatLng(13.699406514904304, -89.19556673760462);
 
 
