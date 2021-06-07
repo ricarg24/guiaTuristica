@@ -7,19 +7,6 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/mapa"
-        android:layout_width="110dp"
-        android:layout_height="110dp"
-        android:background="@drawable/btn_empezar_ruta"
-        android:onClick="EmpezarRuta"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.128" />
-
-    <ImageView
         android:id="@+id/ScanQR"
         android:layout_width="110dp"
         android:layout_height="110dp"
@@ -30,19 +17,42 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.42" />
+        app:layout_constraintVertical_bias="0.325" />
 
-    <TextView
-        android:id="@+id/txtCodigoQR"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Escanear codigo QR"
+    <ImageView
+        android:id="@+id/camara"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:background="@drawable/btn_camara"
+        android:onClick="TomarFoto"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.518" />
+        app:layout_constraintVertical_bias="0.867" />
+
+    <TextView
+        android:id="@+id/txtCamara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Camara"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.911" />
+
+    <TextView
+        android:id="@+id/txtCompartir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Compartir ubicacion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.669" />
 
     <ImageView
         android:id="@+id/compartir"
@@ -55,7 +65,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.7" />
+        app:layout_constraintVertical_bias="0.59" />
 
     <TextView
         android:id="@+id/txtRuta"
@@ -64,32 +74,33 @@
         android:text="Empezar ruta"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.207" />
+
+    <ImageView
+        android:id="@+id/mapa"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:background="@drawable/btn_empezar_ruta"
+        android:onClick="EmpezarRuta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.266" />
+        app:layout_constraintVertical_bias="0.062" />
 
     <TextView
-        android:id="@+id/txtCompartir"
+        android:id="@+id/txtCodigoQR"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Compartir ubicacion"
+        android:text="Escanear codigo QR"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.765" />
+        app:layout_constraintVertical_bias="0.438" />
 
-    <Button
-        android:id="@+id/camaraBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Caamara"
-        android:onClick="TomarFoto"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.925" />
 </androidx.constraintlayout.widget.ConstraintLayout>
