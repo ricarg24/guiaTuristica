@@ -29,4 +29,9 @@ public class MainActivity extends AppCompatActivity {
         Intent camara = new Intent(this, camara.class);
         startActivity(camara);
     }
+
+    public void Redes (View view){
+        Intent Redes = new Intent(this, RedesSociales.class);
+        startActivity(Redes);
+    }
 }
