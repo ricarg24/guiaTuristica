@@ -34,4 +34,9 @@ public class MainActivity extends AppCompatActivity {
         Intent Redes = new Intent(this, RedesSociales.class);
         startActivity(Redes);
     }
+    
+    public void LugaresAVisitar (View view){
+        Intent lugares = new Intent(this,ListaDeLugares.class);
+        startActivity(lugares);
+    }
 }
