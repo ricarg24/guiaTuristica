@@ -2,9 +2,11 @@ package sv.ues.fia.eisi.guiaturistica;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Spinner;
@@ -12,6 +14,8 @@ import android.widget.Spinner;
 public class ListaDeLugares extends AppCompatActivity {
     private Spinner spinner;
     ListView lista;
+    Context contexto;
+
     String [][] lugaresDeInteres = {
             {"Centro Historico"},
             {"Iglesia el Rosario"},
@@ -39,20 +43,25 @@ public class ListaDeLugares extends AppCompatActivity {
         String [] opciones ={"Selecciona","Lugares de interes","Restaurantes"};
         ArrayAdapter<String> adaptador = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, opciones);
         spinner.setAdapter(adaptador);
-        spinner.setOnItemClickListener(new AdapterView.OnItemSelectedListener() {
-            @Override
+        spinner.setOnItemClickListener(new OnItemClickListener() {
+
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+            }
+
+
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 switch (position){
                     case 1:
-                        lista.setAdapter(new Adaptador(this, lugaresDeInteres, imgLugInt));
+                        lista.setAdapter(new Adaptador(contexto, lugaresDeInteres, imgLugInt));
                         break;
                     case 2:
-                        lista.setAdapter(new Adaptador(this, restaurantes, imgRest));
+                        lista.setAdapter(new Adaptador(contexto, restaurantes, imgRest));
                         break;
                 }
             }
 
-            @Override
+
             public void onNothingSelected(AdapterView<?> parent) {
 
             }
