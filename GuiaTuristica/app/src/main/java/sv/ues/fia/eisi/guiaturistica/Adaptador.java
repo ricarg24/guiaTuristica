@@ -32,8 +32,10 @@ public class Adaptador extends BaseAdapter {
         ImageView imagen = (ImageView) vista.findViewById(R.id.ivImagen);
 
         nombre.setText(datos[i][0]);
-        imagen.getTag(i);
-        /*imagen.setOnClickListener(new View.OnClickListener() {
+        imagen.setImageResource(datosImg[i]);
+
+        /*imagen.getTag(i);
+        imagen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent vistaImagen = new Intent(contexto,);
