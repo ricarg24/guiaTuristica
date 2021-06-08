@@ -11,6 +11,7 @@ import android.os.StrictMode;
 import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -18,14 +19,15 @@ import java.io.File;
 import java.util.Calendar;
 
 public class camara extends Activity {
-    Button TomarFoto;
+    ImageButton TomarFoto;
     ImageView image;
     final int FOTOGRAFIA = 654;
+    File fotofile;
     Uri file;
     @Override protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_camara);
-        TomarFoto = (Button) findViewById(R.id.mainbttomarfoto);
+        TomarFoto = (ImageButton) findViewById(R.id.mainbttomarfoto);
         image = (ImageView) findViewById(R.id.mainimage);
         TomarFoto.setOnClickListener(onClick);
         if (savedInstanceState != null) {
